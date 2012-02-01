@@ -11,7 +11,7 @@ class CashFlow:
          self.changeRate(rate)
          
       if ( time != 0 ):
-         self.changeRate(rate)
+         self.changeTime(time)
 
    def changeRate(self,rate):
       self.__rate__=rate
