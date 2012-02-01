@@ -1,3 +1,2 @@
-class cashflow():
-   def cashflow(self):
-      x=1
+class CashFlow:
+   x = 1
