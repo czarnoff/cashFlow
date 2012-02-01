@@ -8,6 +8,8 @@ class TestCashFlowFunctions(unittest.TestCase):
    def test_addIce(self):
       self.cf.addIce(1000)
       self.assertEqual(self.cf.__ice__,1000)
+      self.assertEqual(self.cf.__time__,0)
+      self.assertEqual(self.cf.__rate__,0)
 
    def test_addIceTime(self):
       self.cf.addIce(1000,time=10)
