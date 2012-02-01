@@ -7,7 +7,8 @@ class TestCashFlowFunctions(unittest.TestCase):
       self.x=1
 
    def test_unit(self):
-      self.assertEqual(self.x, 1)
+      self.cf.addIce(1000)
+      self.assertEqual(self.cf.__ice__,1000)
 
 if __name__ == '__main__':
    unittest.main()
