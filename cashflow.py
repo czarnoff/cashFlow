@@ -6,11 +6,19 @@ class CashFlow:
    def addIce(self,iceBlock, time=0,rate=0):
       self.__ice__=iceBlock
       self.__time__=time
+      
+      if ( rate != 0):
+         self.changeRate(rate)
+         
+      if ( time != 0 ):
+         self.changeRate(rate)
+
+   def changeRate(self,rate):
       self.__rate__=rate
-      
-      if (time == 0 and rate != 0):
-         self.__time__=self.__ice__/self.__rate__
-      
-      if (time != 0 and rate == 0):
-         self.__rate__=self.__ice__/self.__time__
+      self.__time__=self.__ice__/self.__rate__
+   
+   def changeTime(self, time):
+      self.__time__=time
+      self.__rate__=self.__ice__/self.__time__
+
 
