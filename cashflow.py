@@ -1,2 +1,6 @@
 class CashFlow:
-   x = 1
+   __ice__=0
+
+   def addIce(self,iceBlock):
+      self.__ice__=iceBlock
+
