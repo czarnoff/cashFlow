@@ -28,6 +28,13 @@ class TestCashFlowFunctions(unittest.TestCase):
       self.assertEqual(self.cf.__ice__,1000)
       self.assertEqual(self.cf.__rate__,12)
       self.assertEqual(self.cf.__time__,14)
+   
+   def test_changeRate(self):
+      self.cf.addIce(1000)
+      self.cf.changeRate(12);
+      self.assertEqual(self.cf.__ice__,1000)
+      self.assertEqual(self.cf.__rate__,12)
+      self.assertEqual(self.cf.__time__,1000/12)
 
 if __name__ == '__main__':
    unittest.main()
