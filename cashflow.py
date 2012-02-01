@@ -23,4 +23,6 @@ class CashFlow:
       self.__rate__=self.__ice__/self.__time__
 
    def getPool(self,curTime=0):
+      if (curTime==__time__):
+         return self.__ice__
       return self.__pool__+curTime*self.__rate__
