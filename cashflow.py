@@ -9,8 +9,8 @@ class CashFlow:
       self.__rate__=rate
       
       if (rate != 0):
-         __time__=__ice__/__rate__
+         self.__time__=self.__ice__/self.__rate__
       
       if (time != 0):
-         __rate__=__ice__/__time__
+         self.__rate__=self.__ice__/self.__time__
 
