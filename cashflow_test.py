@@ -44,7 +44,9 @@ class TestCashFlowFunctions(unittest.TestCase):
       self.assertEqual(self.cf.__time__,12)
 
    def test_pool(self):
+      self.cf.addIce(1000,time=20)
       self.assertEqual(self.cf.getPool(),0)
+      self.assertEqual(self.cf.getPool(10),1000/(20/10))
 
 if __name__ == '__main__':
    unittest.main()
